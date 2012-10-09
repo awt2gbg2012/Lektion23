@@ -10,9 +10,9 @@ namespace Lektion23.Models.Entities
 {
     public class NewsCaption : IEntity
     {
-        //[Key, ForeignKey("News")]
+        [Key, ForeignKey("News")]
         public Guid ID { get; set; }
-        //public virtual News News { get; set; }
+        public virtual News News { get; set; }
         public string Caption { get; set; }
     }
 }
