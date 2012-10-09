@@ -19,10 +19,8 @@ namespace Lektion23.Controllers
             var tags = (new Repository<Tag>()).FindAll();
             var newCaption = (new Repository<NewsCaption>()).FindAll();
             var news = (new Repository<News>()).FindAll();
-            /*
             var news1tags = news.Where(n => n.Title == "News Title 1")
                                 .FirstOrDefault().Tags;
-             * */
 
             return View();
         }
