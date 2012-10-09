@@ -40,9 +40,9 @@ namespace Lektion23.Models.DBInitializers
                                     Title = "News Title 3", 
                                     Body = "News Body 3", 
                                     CategoryID = cat3.ID };
-            //news1.Tags = new List<Tag>(); news1.Tags.Add(tag1); news1.Tags.Add(tag2);
-            //news2.Tags = new List<Tag>(); news2.Tags.Add(tag1);
-            //news3.Tags = new List<Tag>(); news3.Tags.Add(tag2);
+            news1.Tags = new List<Tag>(); news1.Tags.Add(tag1); news1.Tags.Add(tag2);
+            news2.Tags = new List<Tag>(); news2.Tags.Add(tag1);
+            news3.Tags = new List<Tag>(); news3.Tags.Add(tag2);
             var newsList = new List<News> { news1, news2, news3 };
             newsList.ForEach(n => context.News.Add(n));
             context.SaveChanges();
